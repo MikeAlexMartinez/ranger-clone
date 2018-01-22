@@ -1,0 +1,47 @@
+
+/* core-colors */
+
+$black: #000;
+
+$bg-white: #fff;
+$bg-slightwhite: #fafafa;
+$bg-offwhite: #f4f4f4;
+$bg-purple: #ba78ff;
+$bg-darkgrey: #303841;
+
+$btn-active: #4AE3B5;
+$btn-hover: #393e46;
+
+$icon-color-green: #2aaf67;
+$icon-color-red: #e52b50;
+$icon-color-blue: #00bff3;
+$icon-color-default: #4AE3B5;
+
+$section-height: 100vh;
+$hero-height: 75vh;
+$nav-height: 70px;
+
+$box-shadow: #a1a1a1; 
+
+/* font family */;
+$font-faded: #444;
+$font-lightgrey: #818181;
+$font-lightergrey: #f1f1f1;
+
+$main-font: "Work Sans", Arial, sans-serif;
+$main-font-size: 20px;
+
+$header-font: "Montserrat", Arial, sans-serif;
+$header-font-size: 40px;
+
+$subheader-font-size: 30px;
+
+/* Override simple-line-icons defaults */
+// Default Variables
+$simple-line-font-path: "../fonts/simple-line-icons/";
+$simple-line-font-family: "simple-line-icons";
+/* changed to simple-icon- from icon- to prevent clashes with icomoon */
+$simple-line-icon-prefix: "simple-icon-";
+
+/* Override owl-carousel default styles */
+$dot-background-active: transparent;

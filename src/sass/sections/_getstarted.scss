@@ -1,0 +1,43 @@
+.getStarted {
+  position: relative;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  
+  h4 {
+    position: relative;
+    display: block;
+    z-index: 2;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 30px; 
+    font-size: 30px;
+    font-weight: 500;
+
+    @media all and (max-width: 799px) {
+      width: 90%;
+      margin: 5%;
+    }
+    @media all and (min-width: 800px) {
+      width: 730px;
+      margin: 0 auto;
+    }
+
+  }
+
+  button {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.3;
+  }
+
+}

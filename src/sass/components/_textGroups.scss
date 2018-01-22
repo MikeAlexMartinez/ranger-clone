@@ -1,0 +1,90 @@
+%font-styling {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  line-height: 30px;
+  font-weight: 400;
+  color: $font-lightgrey;
+  
+  h5 {
+    font-family: $main-font;
+    font-size: $main-font-size;
+    line-height: 22px;
+    font-weight: 400;
+    color: $font-faded;
+  }
+}
+
+
+.textGroupTwo {
+  @extend %font-styling;
+
+  @media all and (max-width: 991px) {
+    display: block;
+    width: 100%;
+    padding-top: 25px;
+    padding-right: 20%;
+    padding-left: 20%;
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media all and (min-width: 992px) {
+    display: inline-block;
+    width: 30%;
+    padding: 0 30px 50px 30px;
+  }
+
+}
+
+.textGroupThree {
+  margin-bottom: 25px;
+
+  @media all and (max-width: 550px) {
+    display: block;
+    width: 100%;
+  }
+
+  @media all and (min-width: 551px) and (max-width: 992px) {
+    display: inline-block;
+    width: 50%;
+  }
+  
+  @media all and (min-width: 993px) {
+    display: inline-block;
+    width: 33%;
+  }
+
+  .simpleIcon {
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    padding: 8px;
+    color: $icon-color-default;
+    font-size: 40px;
+  }
+
+  .textContainer {
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 10px;
+    width: 80%;
+    
+    @extend %font-styling;
+    
+    h5 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 0; 
+    }
+
+    p {
+      font-size: 17px;
+      margin-top: 5px;
+    }
+  }
+}

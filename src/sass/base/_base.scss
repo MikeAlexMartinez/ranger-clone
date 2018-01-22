@@ -1,0 +1,243 @@
+/* clearfix - source: https://css-tricks.com/snippets/css/clear-fix/ */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+} 
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*
+ ========================================================
+ Grid
+ ========================================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+	padding-bottom: 70px;
+	
+	@media all and (max-width: 991px) {
+		padding: 0px;
+		width: 100%;
+	}
+	@media all and (min-width: 992px) and (max-width: 1250px) {
+		margin: 0 auto;
+		width: 992px;
+
+		.pricing & {
+			width: 100%;
+		}
+	}
+	@media all and (min-width: 1251px) {
+		margin: 0 auto;
+		width: 1250px;
+	}
+}
+
+body {
+  text-align: center;
+  font-family: $main-font;
+  font-size: $main-font-size;
+}
+
+// Hacky way to help move adjust content for navigation bar.
+// Needs to be refactored to remove janky reflow on scroll down.
+// Will need to refactor navigation (again! :*( )
+@media all and (max-width: 991px) {
+	.content {
+		position: relative;
+		top: -235px;
+	}
+	.content.reflow {
+		top: -70px;
+	}
+}
+
+.segment:focus,
+.navigation:focus {
+	outline: none;
+}
+
+/*
+ ========================================================
+ Icons
+ ========================================================
+*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot?srf3rx');
+	src:url('../fonts/icomoon/icomoon.eot?srf3rx#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.ttf?srf3rx') format('truetype'),
+		url('../fonts/icomoon/icomoon.woff?srf3rx') format('woff'),
+		url('../fonts/icomoon/icomoon.svg?srf3rx#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin icomoon() {
+	
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+/*
+ ======================================================
+ Reusable Elements
+ ======================================================
+*/
+
+.btn {
+	text-transform: uppercase;
+	padding: 15px 25px;
+	color: #fff;
+	letter-spacing: 3px;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+
+	&.active {
+		background-color: $btn-active;
+	}
+
+	&.clear {
+		color: $font-faded;
+		background-color: transparent;
+		border: solid 1px $font-lightgrey;
+	}
+
+	&.lrg {
+		padding: 15px 28px;
+		font-size: 18px;
+	}
+
+	&:hover {
+		background-color: $btn-hover;
+		color: #fff;
+		transition: all 0.2s linear;
+	}
+
+	.home &:hover {
+		background-color: transparent;
+		border: solid 1px $icon-color-default;
+	}
+}
+
+/*
+ ======================================================
+ Customise Owl Carousel
+ ======================================================
+*/
+.owl-dots {
+	display: inline-block;
+
+	.home & {
+		position: relative;
+		top: -200px;
+	}
+
+	.screenshots & {
+		padding: 50px;
+	}
+}
+.owl-carousel.owl-theme .owl-dots .owl-dot span {
+	background-color: $font-lightgrey;
+
+	.home & {
+		background-color: $box-shadow;
+		background-color: rgba(0,0,0,0.2);		
+	}
+}
+.owl-carousel.owl-theme .owl-dots .owl-dot.active span, 
+.owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+	background-color: $dot-background-active;
+	border: 2px solid #fff;
+
+	.home & {
+		border: 2px solid #000;
+	}
+}
+
+.home {
+
+	.owl-carousel.owl-theme {
+		max-height: 70vh;
+
+		.owl-prev-relative,
+		.owl-next-relative {
+			visibility: hidden;
+			position: relative;
+			background-color: transparent !important;
+			top: -450px;
+			transform: scale(2);
+			opacity: 0.5;
+		}
+		.owl-prev-relative {
+			padding: 15px;
+		}
+		.owl-next-relative {
+			padding: 15px;
+		}
+
+		&:hover {
+
+			.owl-prev-relative {
+				visibility: visible;
+				left: -42%;
+				transition: all 0.2s linear;
+				
+				&:hover {
+					opacity: 1;
+					left: -41%;
+				}
+			}
+			.owl-next-relative {
+				visibility: visible;
+				right: -42%;
+				
+				transition: all 0.2s linear;
+				&:hover {
+					opacity: 1;
+					right: -41.0%;
+				}
+			}
+		}
+	}
+	.owl-carousel .owl-stage-outer {
+		overflow: visible;
+		height: 70vh;
+	}
+}
+
+/*
+ ======================================================
+ waypoints styling
+ ======================================================
+*/
+
+.hide {
+	visibility: hidden;
+}
+

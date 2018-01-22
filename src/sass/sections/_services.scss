@@ -1,0 +1,32 @@
+.services {
+  background-color: $bg-offwhite;
+
+  .simpleIcon {
+    display: inline-block;
+    padding: 22px 22px 12.6px 22px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+
+    span {
+      font-weight: 400;
+      font-size: 40px;
+    }
+  }
+
+  .green {
+    color: $icon-color-green;
+    border-color: $icon-color-green;
+  }
+  
+  .blue {
+    color: $icon-color-blue;
+    border-color: $icon-color-blue;
+  }
+  
+  .red {
+    color: $icon-color-red;
+    border-color: $icon-color-red;
+  }
+
+}
