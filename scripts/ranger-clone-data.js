@@ -28,7 +28,7 @@ const sections = {
       {
         title: 'App for Android',
         text: '100% Free Fully Responsive HTML5 Bootstrap Template. Crafted with love by the fine folks at FREEHTML5.co',
-        image: 'android.png',
+        image: '/my-projects/ranger-clone/images/android.png',
         style: 'default',
         button: 'View Case Study',
         orientation: 'left',
@@ -37,7 +37,7 @@ const sections = {
       {
         title: 'App for iOS',
         text: '100% Free Fully Responsive HTML5 Bootstrap Template. Crafted with love by the fine folks at FREEHTML5.co',
-        image: 'ios.png',
+        image: '/my-projects/ranger-clone/images/ios.png',
         style: 'alt',
         button: 'View Case Study',
         section: 'hero',
@@ -72,13 +72,13 @@ const sections = {
     title: "App Screenshots",
     subheader: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
     images: [
-      'screen-1-1-login.jpg',
-      'screen-1-8-list.jpg',
-      'screen-2-1-login.jpg',
-      'screen-2-6-overview.jpg',
-      'screen-3-7-groups.jpg',
-      'screen-4-7-groups.jpg',
-      'screen-5-6-overview.jpg',
+      '/my-projects/ranger-clone/images/screen-1-1-login.jpg',
+      '/my-projects/ranger-clone/images/screen-1-8-list.jpg',
+      '/my-projects/ranger-clone/images/screen-2-1-login.jpg',
+      '/my-projects/ranger-clone/images/screen-2-6-overview.jpg',
+      '/my-projects/ranger-clone/images/screen-3-7-groups.jpg',
+      '/my-projects/ranger-clone/images/screen-4-7-groups.jpg',
+      '/my-projects/ranger-clone/images/screen-5-6-overview.jpg',
     ]
   },
   tour: {
@@ -86,7 +86,7 @@ const sections = {
       {
         title: 'We create beautiful web and mobile apps.',
         text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.',
-        image: 'screen-1-1-login.jpg',
+        image: '/my-projects/ranger-clone/images/screen-1-1-login.jpg',
         style: 'default',
         imgStyle: 'hide',
         button: 'Learn more',
@@ -95,7 +95,7 @@ const sections = {
       {
         title: 'We create beautiful web and mobile apps.',
         text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.',
-        image: 'screen-1-8-list.jpg',
+        image: '/my-projects/ranger-clone/images/screen-1-8-list.jpg',
         style: 'alt',
         imgStyle: 'hide',
         button: 'Learn more',
@@ -103,7 +103,7 @@ const sections = {
       {
         title: 'We create beautiful web and mobile apps.',
         text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.',
-        image: 'screen-3-7-groups.jpg',
+        image: '/my-projects/ranger-clone/images/screen-3-7-groups.jpg',
         style: 'default',
         imgStyle: 'hide',
         button: 'Learn more',
