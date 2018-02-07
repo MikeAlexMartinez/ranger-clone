@@ -1,14 +1,14 @@
+'use strict';
+
 // Third party modules
 const express = require('express');
 const router = express.Router();
 
-// Application data
-const appData = require('../scripts/appData');
+const routes = require('./project-routes/ranger-clone'); 
 
-// home route
-router.get('/', function homePage(req, res) {
+routes.forEach( ({ method, route, fn }) => {
 
-  res.render('home', {title: "RangerClone - Home", data: appData.data });
+  router[method](route, fn);
 });
 
 module.exports = router;

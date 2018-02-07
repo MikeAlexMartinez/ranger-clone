@@ -21,7 +21,7 @@ gulp.task("js", function() {
         __dirname + "/node_modules/waypoints/lib"
       ]
     })).on('error', console.log)
-    .pipe(gulp.dest("./public/js"));
+    .pipe(gulp.dest("./public/my-projects/ranger-clone/js"));
 });
 
 /** 
@@ -35,7 +35,7 @@ gulp.task('sass', function() {
       includePaths: ['node_modules']
     }).on('error', sass.logError))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./public/my-projects/ranger-clone/images/css'));
 });
 
 gulp.task('watch', function() {
